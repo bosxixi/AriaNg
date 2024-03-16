@@ -181,7 +181,7 @@
                         var firstSuccessContext = {
                             rpcName: ariaNgSettingService.getCurrentRpcDisplayName()
                         };
-                        fireCustomEvent(onFirstSuccessCallbacks, firstSuccessContext);
+                        //fireCustomEvent(onFirstSuccessCallbacks, firstSuccessContext);
                     }
                 };
 
