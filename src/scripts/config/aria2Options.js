@@ -849,7 +849,8 @@
         //     'option key 1', 'option key 2', // more options if possible
         // ]
         basicOptions: [
-            'dir', 'log', 'max-concurrent-downloads', 'check-integrity', 'continue'
+            //'dir', 
+            'log', 'max-concurrent-downloads', 'check-integrity', 'continue'
         ],
         httpFtpSFtpOptions: [
             'all-proxy', 'all-proxy-user', 'all-proxy-passwd', 'connect-timeout', 'dry-run', 'lowest-speed-limit',
