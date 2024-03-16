@@ -189,7 +189,7 @@
     <aside class="main-sidebar">
         <section class="sidebar">
             <ul id="siderbar-menu" class="sidebar-menu" data-widget="tree" data-animation-speed="300">
-                <li class="header" translate>Download</li>
+                <!-- <li class="header" translate>Download</li>
                 <li data-href-match="/downloading">
                     <a href="#!/downloading"><i class="fa fa-arrow-circle-o-down"></i> <span ng-bind="('Downloading' | translate) + (globalStat && globalStat.numActive > 0 ? ' (' + globalStat.numActive + ')' : '')">Downloading</span></a>
                 </li>
@@ -198,7 +198,7 @@
                 </li>
                 <li data-href-match="/stopped">
                     <a href="#!/stopped"><i class="fa fa-check-circle-o"></i> <span ng-bind="('Finished / Stopped' | translate) + (globalStat && globalStat.numStopped > 0 ? ' (' + globalStat.numStopped + ')' : '')">Finished / Stopped</span></a>
-                </li>
+                </li> -->
                 <li class="header" translate>Settings</li>
                 <li data-href-match="/settings/ariang">
                     <a href="#!/settings/ariang"><i class="fa fa-cog"></i> <span translate>Settings</span></a>
@@ -241,12 +241,12 @@
                 <li class="ng-cloak" data-href-match="/debug" ng-if="enableDebugMode()">
                     <a href="#!/debug"><i class="fa fa-wrench"></i> <span translate>AriaNg Debug Console</span></a>
                 </li>
-                <li data-href-match="/status">
+                <!-- <li data-href-match="/status">
                     <a href="#!/status">
-                        <!-- <span class="label status-label pull-right auto-ellipsis" ng-if="globalStatusContext.isEnabled || isCurrentRpcUseWebSocket" ng-class="{'label-primary': taskContext.rpcStatus === 'Connecting' || taskContext.rpcStatus === 'Reconnecting', 'label-default': taskContext.rpcStatus === 'Waiting to reconnect', 'label-success': taskContext.rpcStatus === 'Connected', 'label-danger': taskContext.rpcStatus === 'Disconnected'}" ng-bind="taskContext.rpcStatus | translate"></span> -->
+                        <span class="label status-label pull-right auto-ellipsis" ng-if="globalStatusContext.isEnabled || isCurrentRpcUseWebSocket" ng-class="{'label-primary': taskContext.rpcStatus === 'Connecting' || taskContext.rpcStatus === 'Reconnecting', 'label-default': taskContext.rpcStatus === 'Waiting to reconnect', 'label-success': taskContext.rpcStatus === 'Connected', 'label-danger': taskContext.rpcStatus === 'Disconnected'}" ng-bind="taskContext.rpcStatus | translate"></span>
                         <i class="fa fa-server"></i> <span translate>Status</span>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </section>
     </aside>
