@@ -288,13 +288,16 @@
                 <a class="global-status" title="{{('Click to pin' | translate)}}"
                    ng-pop-chart ng-data="globalStatusContext.data" ng-theme="currentTheme"
                    ng-container="body" ng-placement="top" ng-trigger="click hover" ng-popover-class="global-status-chart">
-                <span class="realtime-speed">
+                <!-- <span class="realtime-speed">
                     <i class="icon-download fa fa-arrow-down"></i>
                     <span ng-bind="(globalStat.downloadSpeed | readableVolume) + '/s'"></span>
                 </span>
                     <span class="realtime-speed">
                     <i class="icon-upload fa fa-arrow-up"></i>
                     <span ng-bind="(globalStat.uploadSpeed | readableVolume) + '/s'"></span>
+                </span> -->
+                <span class="realtime-speed">
+                    <i class="icon-upload fa fa-wifi"></i>
                 </span>
                 </a>
             </div>
