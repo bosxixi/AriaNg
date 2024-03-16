@@ -24,7 +24,7 @@
         cachedDebugLogsLimit: 100
     }).constant('ariaNgDefaultOptions', {
         language: 'en',
-        theme: 'light',
+        theme: 'dark',
         title: '${downspeed}, ${upspeed} - ${title}',
         titleRefreshInterval: 5000,
         browserNotification: false,
