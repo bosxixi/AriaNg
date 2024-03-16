@@ -125,6 +125,7 @@
         };
 
         var getDefaultRpcHost = function () {
+            return "localhost";
             var currentHost = $location.host();
 
             if (currentHost) {
@@ -194,7 +195,8 @@
 
         var initRpcSettingWithDefaultHostAndProtocol = function (setting) {
             setting.rpcHost = getDefaultRpcHost();
-
+            setting.rpcPort = parseInt(localStorage.getItem('AriaNg.port'))
+            setting.secret = ariaNgCommonService.base64Encode(localStorage.getItem('AriaNg.secret'))
             if (isInsecureProtocolDisabled()) {
                 setting.protocol = ariaNgConstants.defaultSecureProtocol;
             }
