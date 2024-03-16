@@ -4,7 +4,7 @@
             <li ng-class="{'active': isCurrentGlobalTab()}">
                 <a class="pointer-cursor" ng-click="changeGlobalTab()" translate>Global</a>
             </li>
-            <li class="nav-tab-title-rpcname" ng-repeat="setting in context.rpcSettings" ng-class="{'active': isCurrentRpcTab($index)}">
+            <!-- <li class="nav-tab-title-rpcname" ng-repeat="setting in context.rpcSettings" ng-class="{'active': isCurrentRpcTab($index)}">
                 <a class="pointer-cursor" ng-click="changeRpcTab($index)">
                     <span class="nav-tab-rpcname" ng-bind="'RPC' + (setting.rpcAlias || setting.rpcHost ? ' (' + (setting.rpcAlias ? setting.rpcAlias : setting.rpcHost + ':' + setting.rpcPort) + ')' : '')" title="{{(setting.rpcAlias ? setting.rpcAlias : setting.rpcHost + ':' + setting.rpcPort)}}">RPC</span>
                 </a><a class="pointer-cursor nav-tab-close" ng-if="!setting.isDefault" title="{{'Delete RPC Setting' | translate}}">
@@ -15,17 +15,17 @@
                 <a class="pointer-cursor" ng-click="addNewRpcSetting()" title="{{'Add New RPC Setting' | translate}}">
                     <i class="fa fa-plus"></i>
                 </a>
-            </li>
+            </li> -->
         </ul>
         <div class="tab-content no-padding">
             <div class="tab-pane" ng-class="{'active': isCurrentGlobalTab()}">
                 <div class="settings-table striped hoverable">
-                    <div class="row" ng-if="context.ariaNgVersion">
+                    <!-- <div class="row" ng-if="context.ariaNgVersion">
                         <div class="setting-key col-sm-4">
                             <span translate>AriaNg Version</span>
                         </div>
                         <div class="setting-value col-sm-8" ng-bind="context.ariaNgVersion + (context.buildCommit ? ' (' + context.buildCommit + ')' : '')"></div>
-                    </div>
+                    </div> -->
                     <div class="row">
                         <div class="setting-key setting-key-without-desc col-sm-4">
                             <span translate>Language</span>
