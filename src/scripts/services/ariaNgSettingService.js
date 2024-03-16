@@ -332,13 +332,19 @@
                 return isInsecureProtocolDisabled();
             },
             getLanguage: function () {
+                var lang = localStorage.getItem('AriaNg.lang');
+                if (lang) {
+                    if (ariaNgLanguages[lang]) {
+                        return lang;
+                    }
+                }
                 return getOption('language');
             },
             setLanguage: function (value) {
                 if (!ariaNgLanguages[value]) {
                     return false;
                 }
-
+                localStorage.setItem('AriaNg.lang', value);
                 setOption('language', value);
                 return true;
             },
